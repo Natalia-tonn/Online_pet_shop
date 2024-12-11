@@ -7,20 +7,20 @@ h1 {
   margin-top: 80px;
   margin-bottom: 40px; 
   color: #fff;
-  opacity: 0; /* Начальное состояние - невидимое */
-  transform: translateY(20px); /* Сдвиг вниз */
-  animation: fadeIn 1.5s ease-out forwards; /* Анимация */
+  opacity: 0; 
+  transform: translateY(20px);
+  animation: fadeIn 1.5s ease-out forwards;
 }
 
-/* Определение анимации */
+
 @keyframes fadeIn {
   0% {
       opacity: 0;
-      transform: translateY(25px); /* Исходная позиция */
+      transform: translateY(25px); 
   }
   100% {
       opacity: 1;
-      transform: translateY(0); /* Конечная позиция */
+      transform: translateY(0); 
   }
 }
 
