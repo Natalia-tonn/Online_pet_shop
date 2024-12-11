@@ -1,0 +1,130 @@
+
+.Header {
+    border-bottom: 1px solid #DDDDDD;
+  }
+  
+  .Header:hover {
+    background-color: #F1F3F4;
+  }
+  
+  .headerContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 128px;
+  }
+  
+  .logo {
+    flex-shrink: 0;
+  }
+  
+  .navBlock ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .headerLink {
+    padding: 16px 0;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+
+  }
+  
+   .cartLink {
+    position: relative;
+    flex-shrink: 0;
+  } 
+  
+  .cartBadge {
+    position: absolute;
+    top: 8px;
+    right: 20px;
+    background-color: #0D50FF;
+    color: #FFFFFF;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  
+
+  
+  @media (max-width: 768px) {
+    .headerLink {
+      font-size: 14px; /* Уменьшаем шрифт */
+    }
+  }
+  
+  /* Медиазапросы для экранов до 400px */
+  @media (max-width: 558px) {
+    /* Размещение лого сверху */
+    .headerContent {
+      flex-direction: column;
+      align-items: center;
+      height: auto; /* Убираем фиксированную высоту */
+      padding-bottom: 20px;
+    }
+  
+    .logo {
+        margin-bottom: 10px;
+        width: 30%; /* Уменьшаем размер лого */
+        max-width: 50px; /* Ограничиваем максимальный размер */
+        font-size: 30px;
+      }
+  
+    /* Все ссылки на одной строке */
+    .navBlock ul {
+      flex-direction: row; /* Горизонтальное расположение ссылок */
+      gap: 15px; /* Уменьшаем расстояние между ссылками */
+      justify-content: center;
+      margin: 0;
+    }
+    .cartLink img {
+   
+        width: 40px; 
+        margin-top: 10px;
+      
+      }
+  }
+
+
+  @media (max-width: 370px) {
+  
+  
+    .logo {
+        margin-bottom: 10px;
+        max-width: 40px;
+        max-height: 40px;
+      
+  
+       
+      }
+
+    .navBlock ul {
+      flex-direction: row; 
+      gap: 15px; 
+      justify-content: center;
+      margin: 0;
+      font-size: 8px;
+    }
+    .cartLink img {
+   
+        width: 30px; 
+        height: 30px;
+        margin-top: 10px;
+      
+      }
+      .headerLink {
+        font-size: 12px; 
+      }
+    }
